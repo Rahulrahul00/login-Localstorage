@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    color: #ffffff;
+}
+
+body{
+    /* background-image: linear-gradient(to right top, #8f76ff, #7e6bff, #6a60ff, #5055ff, #284bff); */
+    background: url(./images/pngtree-summer-atmosphere-restaurant-supermarket-vegetabl.jpg);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-repeat:no-repeat; */
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    margin-top: 30px;
+    height: 480px;
+    width: 380px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container .form-box h2{
+    text-align: center;
+    font-size: 32px;
+    color: greenyellow;
+}
+
+
+.form-box .input-box {
+    margin: 35px 0;
+    width: 330px;
+    border-bottom: 2px solid rgba(255,255,255,.4);
+    position: relative; 
+    
+   
+    
+}
+
+.form-box .input-box input {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 35px 0 5px;
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    cursor: pointer;
+    color: #d8f790;
+}
+
+.form-box .input-box label {
+    font-weight: 400;
+    letter-spacing: .5px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s ease; 
+    z-index: 0;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px; 
+   
+}
+.input-box  i{
+   position: absolute;
+   right: 5px;
+   top:50%;
+   font-size: 20px;
+   transform: translateY(-50%);
+   
+ }
+ 
+
+.forget-section{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    cursor: pointer;
+}
+
+.forget-section p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+   
+}
+
+.forget-section p input{
+    accent-color: #c094f0;
+    margin: 0 3px;
+    cursor: pointer;    
+}
+
+.forget-section a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+    /* border: 2px solid #c495f2; */
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 7px rgba(178, 135, 247, 0.2), 0 0 15px rgba(119, 135, 240, 0.2), 0 0 30px rgba(116, 107, 244, 0.2);
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: #edeced;
+    
+}
+.account-creation{
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    margin: 25px 0 10px;
+    
+}
+.account-creation a{
+   text-decoration: none;
+   color: #aef608;
+   font-size: 15px;
+}
+.account-creation a:hover{
+    text-decoration: underline;
+   
+ }
+
+ /* register login effect */
+.form-box{
+    display: flex;
+}
+.form-box .loginForm{
+    position: absolute;
+    transform: translateX(0px) rotate(0deg);
+    transition: .5s ease;
+    transition-delay: .4s;
+}
+.form-box .loginForm.come{
+    
+    transform: translateX(-450px)rotate(-45deg);
+    transition-delay: .2s;
+}
+
+.form-box .registerForm{
+    transform: translateX(450px)rotate(45deg);
+    transition: .5s ease;
+    transition-delay: .2s;
+}
+
+.form-box .registerForm.come{
+    
+    transform: translateX(0px)rotate(0deg);
+    transition-delay: .4s;
+}
+
+
+
+/* Resposive  */
+
+@media(max-width:768px){
+    .container{
+        height: 450px;
+        width: 350px;
+    }
+    .container .form-box h2{
+        font-size:20px;
+    }
+    .form-box .input-box{
+        margin: 32px 0;
+        width: 300px;
+    }
+    .form-box .input-box label{
+        font-size: 14px;
+    }
+    .forget-section p{
+        font-size: 13px;
+        margin: 13px 0 0;
+    }
+    .forget-section a{
+        font-size: 13px;
+        margin: 13px 0 0;
+    }
+
+    .btn{
+        height: 40px;
+        width: 80%;
+        font-size: 14px;
+        margin: 15px 5px 0 27px;
+    }
+    .account-creation{
+        font-size: 12px;
+    }
+    .form-box .input-box input{
+        font-size: 13px;
+    }
+}
+@media(max-width:375px){
+    .container{
+        height: 400px;
+        width: 300px;
+    }
+    .container .form-box h2{
+        font-size:18px;
+        margin: 60px 0 0;
+    }
+    .form-box .input-box{
+        margin: 20px 0;
+        width: 250px;
+    }
+    .form-box .input-box label{
+        font-size: 12px;
+    }
+    .forget-section p{
+        font-size: 11px;
+        margin: 12px 0 0;
+    }
+    .forget-section a{
+        font-size: 11px;
+        margin: 12px 0 0;
+    }
+
+    .btn{
+        height: 40px;
+        width: 70%;
+        font-size: 11px;
+        margin: 9px 5px 0 29px;
+    }
+    .account-creation{
+        font-size: 11px;
+        margin-bottom: 35px;
+    }
+    .form-box .input-box input{
+        font-size: 13px;
+    }
+}
