@@ -26,7 +26,7 @@
     top: 0;
     bottom: 0;
     padding: 8px 80px;
-    box-shadow: 5px 5px 20px rgba(0, 0,0, 5);
+    box-shadow: 5px 5px 20px rgb(194, 191, 191);
     /* background: linear-gradient(to left, #1e2220, #254f38, #30804a, #49b354, #86f26b);; */
     background-color: #678e61;
     z-index: 1;
@@ -41,7 +41,7 @@
 
 .navbar .navbar-brand:hover{ 
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     color: #ffffff!important;
     transition: 1S;
 }
@@ -64,14 +64,16 @@
     font-weight: 600;
     border: 30px;
     border-top-right-radius: 0px;
-    transition:0.5s;
+    transition:0.6s ease;
+    margin-left: 20px;
 }
 #navbarSupportedContent button:hover{
-   color: #553636;
-   background-color: #8ff86f;
+   color: #ffffff;
+   background-color: #9dad98;
    font-weight: 600;
    border-top-right-radius: 10px;
    font-family: "Jost",sans-serif;
+   transition: 0.6s ease;
 }
 .today-offer{
    position: absolute;

@@ -96,7 +96,7 @@ let logEmail,logPass;
         return v.email == logEmail && v.password == logPass;
     })){
         alert("Login Successful")
-        window.location.href="homePage.html";
+        window.location.href="crud.html";
     
 
     let currentUser = userData.fliter((v)=>{
